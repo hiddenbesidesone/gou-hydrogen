@@ -1,11 +1,8 @@
-# Hydrogen template: Demo Store
+# GATES OF UTOPIA Store
 
-Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dovetail with [Remix](https://remix.run/), Shopify’s full stack web framework. This template contains a **full-featured setup** of components, queries and tooling to get started with Hydrogen.
+Built on Shopify’s stack for headless commerce. Hydrogen dovetails with [Remix](https://remix.run/).
 
-[Check out Hydrogen docs](https://shopify.dev/custom-storefronts/hydrogen)
-[Get familiar with Remix](https://remix.run/docs/en/v1)
-
-## What's included
+## Included
 
 - Remix
 - Hydrogen
@@ -18,7 +15,6 @@ Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dov
 - Tailwind CSS (via PostCSS)
 - Full-featured setup of components and routes
 
-## Getting started
 
 **Requirements:**
 
@@ -28,7 +24,7 @@ Hydrogen is Shopify’s stack for headless commerce. Hydrogen is designed to dov
 npm create @shopify/hydrogen@latest -- --template demo-store
 ```
 
-Remember to update `.env` with your shop's domain and Storefront API token!
+Update `.env` with your shop's domain and Storefront API token!
 
 ## Building for production
 
