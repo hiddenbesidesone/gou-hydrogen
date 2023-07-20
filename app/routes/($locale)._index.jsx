@@ -51,7 +51,7 @@ export async function loader({params, context}) {
     ),
     secondaryHero: context.storefront.query(COLLECTION_HERO_QUERY, {
       variables: {
-        handle: 'amy',
+        handle: 'backcountry',
         country,
         language,
       },
