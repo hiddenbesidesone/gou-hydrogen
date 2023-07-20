@@ -374,7 +374,7 @@ function Footer({menu}) {
         <div className="gap-3">
           <CountrySelector />
           </div>
-        <div className="gap-3">2</div>
+        <div className="gap-3">Git Genesis Commit</div>
       </div>
 
       {/* <FooterMenu menu={menu} /> */}
