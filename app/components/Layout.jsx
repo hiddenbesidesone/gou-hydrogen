@@ -364,24 +364,23 @@ function Footer({menu}) {
     : [];
 
   return (
-    <Section
+    <div
       divider={isHome ? 'top' : 'top'} // HB1_ divider={isHome ? 'none' : 'top'}
       as="footer"
       role="contentinfo"
-      className={`hb1-font-custom-small min-h-[10rem] w-full gap-3 py-3 px-3 md:px-3 lg:px-3 uppercase`}>
+      className={`w-full grid md:grid-cols-3 border-solid border-gray-400 border-t`} > {/* hb1-font-custom-small min-h-[10rem] w-full gap-3 py-3 px-3 md:px-3 lg:px-3 uppercase */}
 
-      <div className="w-full flex flex-wrap justify-between gap-3">
-        <div className="gap-3">
-          <CountrySelector />
-          </div>
-        <div className="gap-3">Git Genesis Commit</div>
+      <div className="col-span-2 py-3 px-3 hb1-font-custom-small">
+        {/*<CountrySelector />*/}
       </div>
-
-      {/* <FooterMenu menu={menu} /> */}
-      <div className={`self-end pt-8 uppercase md:col-span-2 lg:col-span-${itemsCount}`}>
-        ㋡ {new Date().getFullYear()} &copy;Gates Of Utopia
+      <div className="grid grid-cols-8 col-span-1 border-gray-400 md:border-l hb1-font-custom-small">
+        <div className="col-span-4 py-3 px-3">&copy; {new Date().getFullYear()} Gates Of Utopia ㋡</div>
+        <div className="col-span-2 border-solid border-gray-400 border-l py-3 px-3">SUPPORT</div>
+        <div className="col-span-1 border-solid border-gray-400 border-l py-3 px-3">SOCIALS</div>
+        <div className="col-span-1 border-solid border-gray-400 border-l py-3 px-3">BTC</div>
+        {/*<CountrySelector />*/}
       </div>
-    </Section>
+    </div>
   );
 }
 
@@ -404,7 +403,7 @@ function FooterLink({item}) {
 function FooterMenu({menu}) {
   const styles = {
     section: 'grid gap-4',
-    nav: 'grid gap-2 pb-6',
+    nav: 'grid gap-2 pb-3',
   };
 
   return (
