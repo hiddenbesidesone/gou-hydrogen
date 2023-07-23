@@ -20,7 +20,7 @@ export function Hero({
     <Link to={`/collections/${handle}`}>
       <section
         className={clsx(
-          'relative justify-end flex flex-col w-full',
+          'relative justify-end flex flex-col w-ful border-solid border-gray-400 border-y',
           top && '-mt-nav',
           height === 'full'
             ? 'h-screen'
@@ -51,7 +51,7 @@ export function Hero({
             </div>
           )}
         </div>
-        <div className="flex flex-col items-baseline justify-between gap-1 px-3 sm:px-3 md:px-3 py-3 sm:py-3 md:py-5 bg-gradient-to-t dark:from-contrast/60 dark:text-primary from-primary/60 text-contrast">
+        <div className="flex flex-col items-baseline justify-between gap-1 px-3 sm:px-3 md:px-3 py-3 sm:py-3 md:py-5 dark:text-primary text-contrast">
           {heading?.value && (
             <Heading format as="h2" size="display" className="max-w-md px-1 py-1 bg-white rounded-sm">
               {heading.value}

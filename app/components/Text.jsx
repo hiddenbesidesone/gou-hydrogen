@@ -59,7 +59,7 @@ export function Heading({
   const sizes = {
     display: 'text-display', // HB1_ display: 'font-bold text-display',
     heading: 'text-heading', // HB1_ heading: 'font-bold text-heading',
-    lead: 'text-lead uppercase pb-4 md:px-3 md:py-3', // HB1_ lead: 'font-bold text-lead uppercase',
+    lead: 'text-lead uppercase pb-3 md:px-3 md:py-3', // HB1_ lead: 'font-bold text-lead uppercase',
     copy: 'text-copy', // HB1_ copy: 'font-medium text-copy',
   };
 
@@ -97,7 +97,7 @@ export function Section({
     x: 'px-3 md:px-3 lg:px-3 py-3 md:py-3 lg:py-3',
     y: 'py-3 md:py-3 lg:py-3 lg:pb-8',
     swimlane: 'pt-4 md:pt-8 lg:pt-12 md:pb-4 lg:pb-8',
-    all: 'p-3 md:p-0 md:pt-3 lg:p-0 lg:pt-3',
+    all: 'p-3 md:p-0 md:pt-0 lg:p-0 lg:pt-0',
   };
 
   const dividers = {
