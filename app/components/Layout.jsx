@@ -376,13 +376,13 @@ function Footer({menu}) {
       <div className="grid grid-cols-10 col-span-1 border-gray-400 md:border-l hb1-font-custom-small text-center">
         <div className="col-span-4 py-3 px-3">&copy; {new Date().getFullYear()} Gates Of Utopia ㋡</div>
         <div className="col-span-2 border-solid border-gray-400 border-l py-3 px-3">
-          <Link to={`/support`} prefetch="intent" target="self">Support</Link>
+          <Link to={`/contact`} prefetch="intent">Support</Link>
         </div>
         <div className="col-span-2 border-solid border-gray-400 border-l py-3 px-3">
           <Link to={`https://google.com`} prefetch="intent" target="blank">IG</Link>
         </div>
         <div className="col-span-2 border-solid border-gray-400 border-l py-3 px-3">
-          <Link to={`/contact`} prefetch="intent" target="self">BTC</Link>
+          <Link to={`/btcpayments`} prefetch="intent">BTC</Link>
         </div>
       </div>
     </div>

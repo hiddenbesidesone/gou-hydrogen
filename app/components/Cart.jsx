@@ -336,7 +336,7 @@ export function CartEmpty({hidden = false, layout = 'drawer', onClose}) {
 
   const container = {
     drawer: clsx([
-      'content-start gap-4 px-6 pb-8 transition overflow-y-scroll md:gap-12 md:px-12 h-screen-no-nav md:pb-12',
+      'content-start px-3 py-3 transition overflow-y-scroll h-screen-no-nav',
       y > 0 ? 'border-t' : '',
     ]),
     page: clsx([
@@ -349,17 +349,16 @@ export function CartEmpty({hidden = false, layout = 'drawer', onClose}) {
     <div ref={scrollRef} className={container[layout]} hidden={hidden}>
       <section className="grid gap-6">
         <Text format>
-          Looks like you haven&rsquo;t added anything yet, let&rsquo;s get you
-          started!
+          You Cart is empty.
         </Text>
         <div>
-          <Button onClick={onClose}>Continue shopping</Button>
+          <Button onClick={onClose}>Shop All</Button>
         </div>
       </section>
       <section className="grid gap-8 pt-16">
         <FeaturedProducts
           count={4}
-          heading="Shop Best Sellers"
+          heading="Our Bestsellers"
           layout={layout}
           onClose={onClose}
           sortKey="BEST_SELLING"

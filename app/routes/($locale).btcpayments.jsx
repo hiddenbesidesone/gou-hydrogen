@@ -12,15 +12,15 @@ import {routeHeaders} from '~/data/cache';
 
 export function meta() {
   return [
-    { title: 'Contact &amp; Support' },
-    { description: 'Gates Of Utopia Customer Support' },
+    { title: 'BTC Payments' },
+    { description: 'BTC payments welcome' },
   ];
 }
 
-export default function Contact() {
+export default function Btcpayments() {
   return (
     <div>
-      <h3>Contact Us - direct to page in React</h3>
+      <h3>BTC payment accepted here</h3>
     </div>
   );
 }
