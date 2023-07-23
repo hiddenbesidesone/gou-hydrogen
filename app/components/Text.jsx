@@ -97,7 +97,7 @@ export function Section({
     x: 'px-3 md:px-3 lg:px-3 py-3 md:py-3 lg:py-3',
     y: 'py-3 md:py-3 lg:py-3 lg:pb-8',
     swimlane: 'pt-4 md:pt-8 lg:pt-12 md:pb-4 lg:pb-8',
-    all: 'p-3 md:p-0 md:pt-0 lg:p-0 lg:pt-0',
+    all: 'p-0 md:p-0 md:pt-0 lg:p-0 lg:pt-0',
   };
 
   const dividers = {
@@ -152,7 +152,7 @@ export function PageHeader({
   return (
     <header {...props} className={styles}>
       {heading && (
-        <Heading as="h1" width="narrow" size="heading" className="inline-block">
+        <Heading as="h1" width="narrow" size="heading" className="inline-block pb-3">
           {heading}
         </Heading>
       )}

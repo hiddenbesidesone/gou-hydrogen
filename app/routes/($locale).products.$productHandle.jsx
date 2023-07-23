@@ -105,7 +105,7 @@ export default function Product() {
             className="w-full lg:col-span-2"
           />
           <div className="sticky md:-mb-nav md:top-nav md:-translate-y-nav md:h-screen md:pt-nav hiddenScroll md:overflow-y-scroll border-solid border-gray-400 border-t md:border-t-0">
-            <section className="flex flex-col w-full max-w-xl gap-8 p-3 lg:p-6 md:mx-auto md:max-w-sm md:px-0">
+            <section className="flex flex-col w-full max-w-xl gap-3 p-3 lg:p-6 md:mx-auto md:max-w-sm md:px-0">
               <div className="grid gap-2">
                 <Heading as="h1" className="whitespace-normal">
                   {title}
@@ -115,7 +115,7 @@ export default function Product() {
                 )}
               </div>
               <ProductForm />
-              <div className="grid gap-4 py-4">
+              <div className="grid gap-4 py-3 px-3 border-solid border-gray-400 border">
                 {descriptionHtml && (
                   <ProductDetail
                     title="Product Details"
@@ -418,7 +418,7 @@ function ProductOptionLink({
 
 function ProductDetail({title, content, learnMore}) {
   return (
-    <Disclosure key={title} as="div" className="grid w-full gap-2">
+    <Disclosure key={title} as="div" className="grid w-full gap-2 py-3 border-solid border-gray-400 border-b">
       {({open}) => (
         <>
           <Disclosure.Button className="text-left">
