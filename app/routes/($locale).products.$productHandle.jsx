@@ -12,6 +12,10 @@ import {AnalyticsPageType, Money, ShopPayButton} from '@shopify/hydrogen';
 import invariant from 'tiny-invariant';
 import clsx from 'clsx';
 
+import { Image } from '@shopify/hydrogen';
+import { MediaFile } from '@shopify/hydrogen';
+import { ModelViewer } from '@shopify/hydrogen';
+
 import {
   Heading,
   IconCaret,
@@ -99,7 +103,31 @@ export default function Product() {
   return (
     <>
       <Section className="px-0 md:px-3 lg:px-3">
+
+
+        <ModelViewer data={product.media.nodes[0]} key={product.id} enableZoom={true} enableRotate={true} alt={product.id} className="object-cover w-full h-full aspect-square fadeIn" />
+        <MediaFile data={product.media.nodes[1]} key={product.id} className="object-cover w-full h-full aspect-square fadeIn" />
+
+
+
         <div className="grid items-start md:gap-6 lg:gap-20 md:grid-cols-2 lg:grid-cols-3">
+
+          {/*
+          <ul>
+            <ModelViewer data={product.media.nodes[0]} key={product.id} enableZoom={true} enableRotate={true} alt={product.id} />
+          </ul>
+
+          <ul>
+            <MediaFile data={product.media.nodes[0]} key={product.id} />
+          </ul>
+
+          <Image
+            className={`w-full h-full aspect-square object-cover`}
+            data={product.featuredImage}
+          />
+          */}
+
+
           <ProductGallery
             media={media.nodes}
             className="w-full lg:col-span-2"
@@ -507,6 +535,13 @@ const PRODUCT_QUERY = `#graphql
       handle
       descriptionHtml
       description
+      featuredImage{
+        id
+        url
+        altText
+        width
+        height
+      }
       options {
         name
         values
